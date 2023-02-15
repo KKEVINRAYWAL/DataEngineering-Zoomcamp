@@ -1,19 +1,6 @@
 # Week 3 Homework
-**Important Note:**
 
-You can load the data however you would like, but keep the files in .GZ Format. If you are using orchestration such as Airflow or Prefect do not load the data into Big Query using the orchestrator.
-Stop with loading the files into a bucket.
-
-**NOTE:** You can use the CSV option for the GZ files when creating an External Table
-
-**SETUP:**
-Create an external table using the fhv 2019 data.
-Create a table in BQ using the fhv 2019 data (do not partition or cluster this table).
-Data can be found here: https://github.com/DataTalksClub/nyc-tlc-data/releases/tag/fhv
-
-* The data was uploaded to GSP (bucket) using the scriped ```parameterarized_flow.py```
-* Via the UI it was transferred to BigQuery
-* Create an external table:
+## creating the external table
 ```
 CREATE OR REPLACE EXTERNAL TABLE `red-tide-376509.week3_homework.external_fhv_tripdata`
 OPTIONS (
